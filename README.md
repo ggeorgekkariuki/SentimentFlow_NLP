@@ -1,15 +1,16 @@
-# SentimentFlow: Twitter Sentiment Analysis for Apple and Google Products
+# SentimentFlow: Twitter Sentiment Analysis
 
-<img src="images/apple.jpeg" alt="Apple" title="Apple" width="480" style="display:inline-block;"/>
-<img src="images/google.jpeg" alt="Google" title="Google" width="480" style="display:inline-block;"/>
+<div style="text-align: center;">
+  <img src="images\Sentiment_flow_image.jpg" alt="Google vs Apple" title="Google vs Apple" width="600" height="300"/>
+</div>
 
 ## Overview
 
-SentimentFlow addresses the challenge of understanding public sentiment toward Apple and Google products on Twitter. Stakeholders, including companies, marketing teams, and decision-makers, seek insights to make informed strategic decisions based on social media sentiment.
+SentimentFlow addresses the challenge of understanding public sentiment toward products on Twitter. Stakeholders, including companies, marketing teams, and decision-makers, seek insights to make informed strategic decisions based on social media sentiment.
 
 ## Problem Statement
 
-The goal is to accurately classify tweet sentiments related to Apple and Google products as positive, negative, or neutral. This classification helps companies gauge customer satisfaction and tailor responses accordingly.
+The goal is to accurately classify tweet sentiments as positive, negative, or neutral. This classification helps companies gauge customer satisfaction and tailor responses accordingly.
 
 ## Stakeholders
 
@@ -29,7 +30,7 @@ Accurate sentiment classification provides actionable insights:
 **Main Objective:**
 Develop an NLP multiclass classification model with:
 - Recall score ≥ 85%
-- Accuracy ≥ 90%
+- Accuracy ≥ 80%
 - Three sentiment classes: Positive, Negative, and Neutral.
 
 **Specific Objectives:**
