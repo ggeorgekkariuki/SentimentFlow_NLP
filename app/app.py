@@ -34,7 +34,7 @@ st.markdown(
 )
 
 # Logo
-st.logo(image="images/bird.png")
+st.logo(image="../images/bird.png")
 
 # Navigation and it's paages
 pg = st.navigation([
