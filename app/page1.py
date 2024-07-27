@@ -7,10 +7,6 @@ import time
 st.header("SentimentFlow Sentiment Analysis", divider=True)
 st.write("This application uses the Unsupervised Machine Learning - Natural Language Preprocessing to analyse the sentiment behind a text.")
 
-# Resize the image
-# image = Image.open("images/word_cloud_short.png")
-# new_image = image.resize((700, 250))
-# st.image(new_image)
 st.image("../images/word_cloud_short.png")
 
 # The Form Container

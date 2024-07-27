@@ -1,5 +1,4 @@
 import streamlit as st
-from images import *
 
 st.header("About Project :clipboard:")
 
