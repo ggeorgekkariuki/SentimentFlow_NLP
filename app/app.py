@@ -33,8 +33,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+IMAGE_PATH = "images/bird.png"
 # Logo
-st.logo(image="images/bird.png")
+st.logo(IMAGE_PATH)
 
 # Navigation and it's paages
 pg = st.navigation([
