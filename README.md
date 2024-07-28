@@ -1,7 +1,7 @@
 # SentimentFlow: Twitter Sentiment Analysis
 
 <div style="text-align: center;">
-  <img src="images\Sentiment_flow_image.jpg" alt="Google vs Apple" title="Google vs Apple" width="600" height="300"/>
+  <img src="app\images\Sentiment_flow_image.jpg" alt="Google vs Apple" title="Google vs Apple" width="600" height="300"/>
 </div>
 
 ## Overview
