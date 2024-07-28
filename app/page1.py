@@ -7,7 +7,7 @@ import time
 st.header("SentimentFlow Sentiment Analysis", divider=True)
 st.write("This application uses the Unsupervised Machine Learning - Natural Language Preprocessing to analyse the sentiment behind a text.")
 
-st.image("../images/word_cloud_short.png")
+st.image("images/word_cloud_short.png")
 
 # The Form Container
 tweet_container = st.empty()

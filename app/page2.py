@@ -176,22 +176,22 @@ with tab4:
     st.header("Data Visualisation :tv:")
 
     st.markdown("### All Tweets")
-    st.image(image="../images/word_cloud.png", caption="Word cloud of all the words in our dataset - Google and Apple appear many times over.")
+    st.image(image="images/word_cloud.png", caption="Word cloud of all the words in our dataset - Google and Apple appear many times over.")
 
     st.markdown("### Neutral Tweets")    
-    st.image(image='../images/freq_dist_neutral_emotion.png', caption="Top 30 Frequency Distribution of the Tweets categorised as Neutral")
+    st.image(image='images/freq_dist_neutral_emotion.png', caption="Top 30 Frequency Distribution of the Tweets categorised as Neutral")
     
-    st.image(image='../images/bigram_neutral_emotion.png', caption="Top 20 Bigram Distribution of the Tweets categorised as Neutral")
+    st.image(image='images/bigram_neutral_emotion.png', caption="Top 20 Bigram Distribution of the Tweets categorised as Neutral")
     
     st.markdown("### Positive Tweets")    
-    st.image(image='../images/freq_dist_positive_emotion.png', caption="Top 30 Frequency Distribution of the Tweets categorised as Positive")
+    st.image(image='images/freq_dist_positive_emotion.png', caption="Top 30 Frequency Distribution of the Tweets categorised as Positive")
     
-    st.image(image='../images/bigram_positive_emotion.png', caption="Top 20 Bigram Distribution of the Tweets categorised as Positive")
+    st.image(image='images/bigram_positive_emotion.png', caption="Top 20 Bigram Distribution of the Tweets categorised as Positive")
     
     st.markdown("### Negative Tweets")    
-    st.image(image='../images/freq_dist_negative_emotion.png', caption="Top 30 Frequency Distribution of the Tweets categorised as Negative")
+    st.image(image='images/freq_dist_negative_emotion.png', caption="Top 30 Frequency Distribution of the Tweets categorised as Negative")
     
-    st.image(image='../images/bigram_negative_emotion.png', caption="Top 20 Bigram Distribution of the Tweets categorised as Negative")
+    st.image(image='images/bigram_negative_emotion.png', caption="Top 20 Bigram Distribution of the Tweets categorised as Negative")
 
 # Modelling
 with tab5:
