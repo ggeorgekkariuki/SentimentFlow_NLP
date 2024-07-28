@@ -1,4 +1,7 @@
 import streamlit as st
+from pickles import data
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 st.header("About Project :clipboard:")
 
@@ -193,3 +196,8 @@ with tab4:
 # Modelling
 with tab5:
     st.subheader("Modelling :test_tube:")
+
+    fig = plt.figure(figsize=(10, 6))
+    sns.barplot(data=data, y='models', x='accuracy')
+    plt.title("Models and their accuracy scores", fontsize=16)
+    st.pyplot(fig)

@@ -20,9 +20,9 @@ with tweet_container.container():
        st.subheader("Tweet Here :bird:")
        with st.form(key='form1'):
            username = st.text_input("Username", placeholder="Enter your Username")
-           products = ['Google', 'Apple', 'iPad', 'iPhone', 'Nothing']
+           products = ['Google', 'Apple', 'iPad', 'iPhone', 'Apple Product', 'Google Product']
            product = st.selectbox("Which product do you want to talk about", products)
-           sentiment = st.text_input("Tweet", placeholder="Post your Tweet")
+           sentiment = st.text_area("Tweet", placeholder="Post your Tweet")
            predict_button = st.form_submit_button('Analyze')
 
 
@@ -39,6 +39,9 @@ with tweet_container.container():
                 st.info("Please fill in the previous form - Tweet Field", icon="ℹ️")
             else:
                 st.write(f"The user @{username.lower().replace(' ', '_')} focused on the product: {product} and said '{sentiment}'")
-                with st.spinner('Wait for it...'):
+                randoms = ['Thinking', 'Processing', 'Considering', 'Wizardy Applying', 'Hmmm', 'Contacting the Mothership', "Predicting",
+                "Checking under the bed for an answer"]
+                answers = randoms[np.random.choice(len(randoms))]
+                with st.spinner(f"{answers}..."):
                     time.sleep(3)
-                st.success(f"Our model predicted the sentiment to be a {execute_flow(sentiment)}!")
+                    st.success(f"Our model predicted the sentiment to be a {execute_flow(sentiment)}!")
