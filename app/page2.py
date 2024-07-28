@@ -46,7 +46,7 @@ By accurately classifying tweets, our NLP model can provide actionable insights 
 ### Objectives
 **Main Objective**
                 
-To create a NLP multiclass classification model that can analyse sentiments in either 3 categories - Positive, Negative or Neutral. This model targets to achieve a recall score of 85% and an accuracy of 90%.
+To create a NLP multiclass classification model that can analyse sentiments in either 3 categories - Positive, Negative or Neutral. This model targets to achieve a recall score of 80% and an accuracy of 80%.
                 
 **Specific Objectives**
 -	To identify the most common words used in the dataset using Word cloud.
