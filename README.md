@@ -30,7 +30,7 @@ Accurate sentiment classification provides actionable insights:
 
 **Main Objective:**
 Develop an NLP multiclass classification model with:
-- Recall score ≥ 85%
+- Recall score ≥ 80%
 - Accuracy ≥ 80%
 - Three sentiment classes: Positive, Negative, and Neutral.
 
