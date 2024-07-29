@@ -4,6 +4,8 @@
   <img src="images\Sentiment_flow_image.jpg" alt="Google vs Apple" title="Google vs Apple" width="600" height="300"/>
 </div>
 
+**View this project on Streamlit [here](https://sentimentflow-nlp-project.streamlit.app/)**
+
 ## Overview
 
 SentimentFlow addresses the challenge of understanding public sentiment toward products on Twitter. Stakeholders, including companies, marketing teams, and decision-makers, seek insights to make informed strategic decisions based on social media sentiment.
