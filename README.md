@@ -273,7 +273,7 @@ Integrate the sentiment analysis models with social media platforms' APIs for se
 
 The app was deployed using Streamlit.
 
-**View this project [here.👈](https://sentimentflow-nlp-project.streamlit.app/)**
+**View this project [here.](https://sentimentflow-nlp-project.streamlit.app/)** 👈
 
 ## **Example Usage**
 
