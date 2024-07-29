@@ -51,7 +51,7 @@ eda.plot_bar(df, feature='emotion', plot='bar')
 
 
     
-![png](images\emotion_distribution.png)
+![png](images/emotion_distribution.png)
 
 It is evident that class imbalance exists in the data.
 
@@ -61,7 +61,7 @@ eda.plot_fdist()
 
 ***Frequency Distribution of words used in tweets***
     
-![png](images\freq_dist_all_words.png)
+![png](images/freq_dist_all_words.png)
     
 ***Top 10 Bigrams***
 
@@ -72,7 +72,7 @@ eda.bigram_plots(items=10)
 
 
     
-![png](images\bigram.png)
+![png](images/bigram.png)
     
 
 ***Word Cloud Visual***
@@ -84,7 +84,7 @@ eda.create_word_cloud(lemmatized_tweet=df['lemmatized_tweet'])
 
 
     
-![png](images\word_cloud.png)
+![png](images/word_cloud.png)
     
 
 
