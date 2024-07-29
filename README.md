@@ -51,9 +51,9 @@ Develop an NLP multiclass classification model with:
 <p align="center">
   <img src="images/emotion_distribution.png" alt="[YOUR_IMAGE_ALT]">
 </p>    
-![png](images/emotion_distribution.png)
 
-It is evident that class imbalance exists in the data.
+
+> It is evident that class imbalance exists in the data.
 
 
 ***3. Frequency Distribution of words used in tweets***
