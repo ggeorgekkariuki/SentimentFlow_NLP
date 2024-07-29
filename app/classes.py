@@ -1,7 +1,6 @@
 from pickles import *
 import nltk
 import string
-from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
@@ -43,7 +42,8 @@ def predict(tf_data):
     # Make prediction using the loaded model
     prediction = model.predict(tf_data)
 
-    labels = ['Negative emotion', 'Neutral emotion', 'Positive emotion']
+    # The labels to the data
+    labels = label_categories
 
     return labels[prediction[0]]
 
