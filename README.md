@@ -43,32 +43,23 @@ Develop an NLP multiclass classification model with:
 
 ## **Data Analysis**
 
-***1. Distribution of the `emotion` feature***
+***1. Product Distribution***
 
-```python
-eda.plot_bar(df, feature='emotion', plot='bar')
-```
+![png](images/product_distribution.png)
 
+***2. Distribution of the `emotion` feature***
 
     
 ![png](images/emotion_distribution.png)
 
 It is evident that class imbalance exists in the data.
 
-```python
-eda.plot_fdist()
-```
 
 ***Frequency Distribution of words used in tweets***
     
 ![png](images/freq_dist_all_words.png)
     
 ***Top 10 Bigrams***
-
-
-```python
-eda.bigram_plots(items=10)
-```
 
 
     
@@ -78,10 +69,6 @@ eda.bigram_plots(items=10)
 ***Word Cloud Visual***
 
 Shows the most frequent words used in tweets; those with the highest frequency are larger in size.
-```python
-eda.create_word_cloud(lemmatized_tweet=df['lemmatized_tweet'])
-```
-
 
     
 ![png](images/word_cloud.png)
@@ -106,10 +93,6 @@ The machine learning algorithms used in this section are:
 ### ***1. Random Forest Classifier***
 
 *Before tuning*
-```python
-modelling(model=rf, cv=True)
-modelling(model=rf, tf=True)
-```
 
     Count Vectorisation Results
     
@@ -151,19 +134,6 @@ modelling(model=rf, tf=True)
 
 *After hyper-parameter tuning*
 
-```python
-# Define the Random Forest classifier
-rf = RandomForestClassifier(random_state= 42)
-
-# Define the parameter grid with the necessary hyperparameters
-rf_param_grid = {
-    'n_estimators': [100, 200],  # Number of trees in the forest
-    'max_depth': [None, 10, 20, 30]   # Maximum depth of the tree
-}
-
-tuned_rf_cv_model, tuned_rf_tf_model = hyper_tuning(model=rf, params=rf_param_grid, model_name="Random Forest")
-```
-
     Count Vectorisation Results
     
     Best Random Forest Model (Count Vectorization):
@@ -196,10 +166,6 @@ tuned_rf_cv_model, tuned_rf_tf_model = hyper_tuning(model=rf, params=rf_param_gr
 ### ***2. Logistic Regression***
 
 *Before tuning*
-```python
-modelling(model=lr, cv=True)
-modelling(model=lr, tf=True)
-```
 
     Count Vectorisation Results
     
@@ -240,15 +206,6 @@ modelling(model=lr, tf=True)
 
 *After hyper-parameter tuning*
 
-```python
-# Parameter Tuning
-c_space = np.linspace(30, 32, 3)
-max_iters = [100, 150, 200]
-solvers = ["lbfgs", "liblinear"]
-lr_param_grid = { 'C': c_space, 'max_iter':max_iters }
-tuned_lr_cv_model, tuned_lr_tf_model = hyper_tuning(model=lr, params=lr_param_grid, model_name="Logistic Regression")
-```
-
     Count Vectorisation Results
     
     Best Logistic Regression Model (Count Vectorization):
@@ -277,3 +234,60 @@ tuned_lr_cv_model, tuned_lr_tf_model = hyper_tuning(model=lr, params=lr_param_gr
 > TF-IDF Vectorization-based model improved from 0.808 to 0.831.
 
 > Further indication that the TFIDF vectorisation is better
+
+## **Conclusion**
+
+We explored the effectiveness of various machine learning models to predict the sentiment of tweets about Apple and Google products. Our data was preprocessed by label encoding the emotion labels, applying SMOTE to address class imbalance, vectorizing the text data using both CountVectorizer and TF-IDF. 
+We then evaluated the performance of the models including RandomForest, Naive Bayes (MultinomialNB), Logistic Regression, and Decision Trees, and conducted hyperparameter tuning to optimize their performance.
+
+> The best model was found to be Random Forest Classifier.
+
+## **Recommendations**
+
+Based on the findings, here are some recommendations for future work and practical application:
+
+- **Deploying Models:** 
+
+For real-time sentiment analysis, consider deploying the Tuned Logistic Regression or Tuned Random Forest models with TF-IDF vectorization due to their high accuracy and robustness.
+
+
+- **Scalability:** 
+
+Assess the scalability of the models for handling large-scale data in a production environment. Optimize the models for performance and efficiency to ensure they can process a high volume of tweets quickly and accurately.
+
+
+- **Real-Time Processing:** 
+
+Explore real-time processing capabilities to provide up-to-date sentiment analysis, which is crucial for timely decision-making and responding to emerging trends.
+
+
+- **Continuous Monitoring:**
+
+Implement continuous monitoring of the deployed models to detect any performance degradation over time. Retrain the models if necessary with new data to maintain accuracy and relevance.
+
+
+- **Integration with Social Media Platforms:**
+
+Integrate the sentiment analysis models with social media platforms' APIs for seamless data collection and analysis, enabling continuous monitoring and real-time insights.
+
+## **Deployment**
+
+The app was deployed using Streamlit.
+
+## **Example Usage**
+
+![png](images/sentiment_flow_app.png)
+
+## **Installation**
+
+Clone the repository: bash git clone [https://github.com/Misfit911/SentimentFlow]
+
+Install dependencies: bash pip install -r requirements.txt
+
+## **Usage**
+
+To run the app engine: bash python app.py
+
+## **License**
+
+This project is licensed under the Creative Commons Zero v1.0 Universal - see the LICENSE file for details.
