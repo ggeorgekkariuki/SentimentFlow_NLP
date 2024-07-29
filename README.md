@@ -4,7 +4,6 @@
   <img src="images\Sentiment_flow_image.jpg" alt="Google vs Apple" title="Google vs Apple" width="600" height="300"/>
 </div>
 
-**View this project on Streamlit [here](https://sentimentflow-nlp-project.streamlit.app/)**
 
 ## Overview
 
@@ -237,42 +236,44 @@ The machine learning algorithms used in this section are:
 
 ## **Conclusion**
 
-We explored the effectiveness of various machine learning models to predict the sentiment of tweets about Apple and Google products. Our data was preprocessed by label encoding the emotion labels, applying SMOTE to address class imbalance, vectorizing the text data using both CountVectorizer and TF-IDF. 
-We then evaluated the performance of the models including RandomForest, Naive Bayes (MultinomialNB), Logistic Regression, and Decision Trees, and conducted hyperparameter tuning to optimize their performance.
+We explored the effectiveness of various machine learning models to predict the sentiment of tweets about Apple and Google products. Our data was preprocessed by label encoding the emotion labels, applying SMOTE to address class imbalance, and vectorizing the text data using both CountVectorizer and TF-IDF. 
+We evaluated the performance of the models based on the key metrics; accuracy and recall and investigated the different models including RandomForest, Naive Bayes (MultinomialNB), Logistic Regression, and Decision Trees. We further conducted hyperparameter tuning to optimize their performance.
 
-> The best model was found to be Random Forest Classifier.
+> The best model was found to be Random Forest Classifier & Logistic Regression.
 
 ## **Recommendations**
 
 Based on the findings, here are some recommendations for future work and practical application:
 
-- **Deploying Models:** 
+**Monitoring Negative Sentiments:** 
 
-For real-time sentiment analysis, consider deploying the Tuned Logistic Regression or Tuned Random Forest models with TF-IDF vectorization due to their high accuracy and robustness.
+Implement real-time monitoring and alert systems to flag negative sentiments as they arise. This allows for prompt intervention and resolution of customer issues.
 
-
-- **Scalability:** 
+**Scalability:** 
 
 Assess the scalability of the models for handling large-scale data in a production environment. Optimize the models for performance and efficiency to ensure they can process a high volume of tweets quickly and accurately.
 
 
-- **Real-Time Processing:** 
+**Real-Time Processing:** 
 
 Explore real-time processing capabilities to provide up-to-date sentiment analysis, which is crucial for timely decision-making and responding to emerging trends.
 
 
-- **Continuous Monitoring:**
+**Continuous Model Monitoring:**
 
 Implement continuous monitoring of the deployed models to detect any performance degradation over time. Retrain the models if necessary with new data to maintain accuracy and relevance.
 
 
-- **Integration with Social Media Platforms:**
+**Integration with Social Media Platforms:**
 
 Integrate the sentiment analysis models with social media platforms' APIs for seamless data collection and analysis, enabling continuous monitoring and real-time insights.
+
 
 ## **Deployment**
 
 The app was deployed using Streamlit.
+
+**View this project [here.👈](https://sentimentflow-nlp-project.streamlit.app/)**
 
 ## **Example Usage**
 
@@ -280,9 +281,9 @@ The app was deployed using Streamlit.
 
 ## **Installation**
 
-Clone the repository: bash git clone [https://github.com/Misfit911/SentimentFlow]
+Clone the repository: bash `git clone https://github.com/Misfit911/SentimentFlow`
 
-Install dependencies: bash pip install -r requirements.txt
+Install dependencies: bash `pip install -r requirements.txt`
 
 ## **Usage**
 
