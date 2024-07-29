@@ -3,7 +3,7 @@ import numpy as np
 from classes import execute_flow
 import time
 
-st.header("SentimentFlow Sentiment Analysis", divider=True)
+st.header("SentimentFlow", divider=True)
 st.write("This application uses the Unsupervised Machine Learning - Natural Language Preprocessing to analyse the sentiment behind a text.")
 
 st.image("app/images/word_cloud_short.png")
