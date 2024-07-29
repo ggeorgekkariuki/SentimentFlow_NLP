@@ -1,9 +1,10 @@
 import streamlit as st
+from images import *
 
 # Page Set Up
 st.set_page_config(
     page_title="Sentiment Analysis App",
-    page_icon="images/bird.png",
+    page_icon="app/images/bird.png",
     layout="centered",
     initial_sidebar_state="expanded",
     menu_items={'About': 'NLP Sentiment Analysis'}
@@ -33,9 +34,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-IMAGE_PATH = "images/bird.png"
 # Logo
-st.logo(IMAGE_PATH)
+st.logo('app/images/bird.png')
 
 # Navigation and it's paages
 pg = st.navigation([
