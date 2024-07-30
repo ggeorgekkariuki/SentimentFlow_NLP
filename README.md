@@ -4,7 +4,6 @@
   <img src="app\images\Sentiment_flow_image.jpg" alt="Google vs Apple" title="Google vs Apple" width="600" height="300"/>
 </div>
 
-
 ## Overview
 
 SentimentFlow addresses the challenge of understanding public sentiment toward products on Twitter. Stakeholders, including companies, marketing teams, and decision-makers, seek insights to make informed strategic decisions based on social media sentiment.
@@ -22,6 +21,7 @@ The goal is to accurately classify tweet sentiments as positive, negative, or ne
 ## Value Proposition
 
 Accurate sentiment classification provides actionable insights:
+
 - Negative sentiment: Prompt issue resolution.
 - Positive sentiment: Reinforce successful strategies.
 - Neutral sentiment: Contextual understanding.
@@ -30,11 +30,13 @@ Accurate sentiment classification provides actionable insights:
 
 **Main Objective:**
 Develop an NLP multiclass classification model with:
+
 - Recall score ≥ 80%
 - Accuracy ≥ 80%
 - Three sentiment classes: Positive, Negative, and Neutral.
 
 **Specific Objectives:**
+
 1. Identify common words using Word Cloud.
 2. Confirm positive and negative word associations.
 3. Recognize mentioned products.
@@ -44,37 +46,27 @@ Develop an NLP multiclass classification model with:
 
 ***1. Product Distribution***
 
-![png](images/product_distribution.png)
+![Product Distribution](app/images/product_distribution.png)
 
 ***2. Distribution of the `emotion` feature***
 
-<p align="center">
-  <img src="images/emotion_distribution.png" alt="[YOUR_IMAGE_ALT]">
-</p>    
-
+![Sentiment Distribution](app/images/emotion_distribution.png)
 
 > It is evident that class imbalance exists in the data.
 
-
 ***3. Frequency Distribution of words used in tweets***
-    
-![png](images/freq_dist_all_words.png)
-    
+
+![Freq Dist of All Words](images/freq_dist_all_words.png)
+
 ***4. Top 10 Bigrams***
 
-
-    
-![png](images/bigram.png)
-    
+![Top 10 Most common bigrams](images/bigram.png)
 
 ***5. Word Cloud Visual***
 
 Shows the most frequent words used in tweets; those with the highest frequency are larger in size.
 
-    
-![png](images/word_cloud.png)
-    
-
+![Word Cloud](images/word_cloud.png)
 
 ## **Data Modeling**
 
@@ -132,7 +124,6 @@ The machine learning algorithms used in this section are:
        macro avg       0.76      0.71      0.71      4564
     weighted avg       0.76      0.71      0.71      4564
 
-
 *After hyper-parameter tuning*
 
     Count Vectorisation Results
@@ -154,7 +145,6 @@ The machine learning algorithms used in this section are:
     Test Accuracy (TFIDF Vectorization): 0.837
     
     Test Recall (TFIDF Vectorization): 0.836
-    
 
 #### *Observation*
 
@@ -226,7 +216,6 @@ The machine learning algorithms used in this section are:
     Test Accuracy (TFIDF Vectorization): 0.835
     
     Test Recall (TFIDF Vectorization): 0.834
-    
 
 #### *Observation*
 
@@ -238,7 +227,7 @@ The machine learning algorithms used in this section are:
 
 ## **Conclusion**
 
-We explored the effectiveness of various machine learning models to predict the sentiment of tweets about Apple and Google products. Our data was preprocessed by label encoding the emotion labels, applying SMOTE to address class imbalance, and vectorizing the text data using both CountVectorizer and TF-IDF. 
+We explored the effectiveness of various machine learning models to predict the sentiment of tweets about Apple and Google products. Our data was preprocessed by label encoding the emotion labels, applying SMOTE to address class imbalance, and vectorizing the text data using both CountVectorizer and TF-IDF.
 We evaluated the performance of the models based on the key metrics; accuracy and recall and investigated the different models including RandomForest, Naive Bayes (MultinomialNB), Logistic Regression, and Decision Trees. We further conducted hyperparameter tuning to optimize their performance.
 
 > The best model was found to be Random Forest Classifier & Logistic Regression.
@@ -247,29 +236,25 @@ We evaluated the performance of the models based on the key metrics; accuracy an
 
 Based on the findings, here are some recommendations for future work and practical application:
 
-**i.) Monitoring Negative Sentiments:** 
+**i.) Monitoring Negative Sentiments:**
 
 Implement real-time monitoring and alert systems to flag negative sentiments as they arise. This allows for prompt intervention and resolution of customer issues.
 
-**ii.) Scalability:** 
+**ii.) Scalability:**
 
 Assess the scalability of the models for handling large-scale data in a production environment. Optimize the models for performance and efficiency to ensure they can process a high volume of tweets quickly and accurately.
 
-
-**iii.) Real-Time Processing:** 
+**iii.) Real-Time Processing:**
 
 Explore real-time processing capabilities to provide up-to-date sentiment analysis, which is crucial for timely decision-making and responding to emerging trends.
-
 
 **iv.) Continuous Model Monitoring:**
 
 Implement continuous monitoring of the deployed models to detect any performance degradation over time. Retrain the models if necessary with new data to maintain accuracy and relevance.
 
-
 **v.) Integration with Social Media Platforms:**
 
 Integrate the sentiment analysis models with social media platforms' APIs for seamless data collection and analysis, enabling continuous monitoring and real-time insights.
-
 
 ## **Deployment**
 
