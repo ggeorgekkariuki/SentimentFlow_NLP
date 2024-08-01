@@ -1,7 +1,7 @@
 # SentimentFlow: Twitter Sentiment Analysis
 
-<div style="text-align: center;">
-  <img src="app\images\Sentiment_flow_image.jpg" alt="Google vs Apple" title="Google vs Apple" width="600" height="300"/>
+<div style="text-align: center;",>
+  <img src="app\images\Sentiment_flow_image.jpg", alt="Google vs Apple", title="Google vs Apple", width="800" height="300"/>
 </div>
 
 ## Overview
@@ -56,17 +56,17 @@ Develop an NLP multiclass classification model with:
 
 ***3. Frequency Distribution of words used in tweets***
 
-![Freq Dist of All Words](images/freq_dist_all_words.png)
+![Freq Dist of All Words](app/images/freq_dist_all_words.png)
 
 ***4. Top 10 Bigrams***
 
-![Top 10 Most common bigrams](images/bigram.png)
+![Top 10 Most common bigrams](app/images/bigram_all_data.png)
 
 ***5. Word Cloud Visual***
 
 Shows the most frequent words used in tweets; those with the highest frequency are larger in size.
 
-![Word Cloud](images/word_cloud.png)
+![Word Cloud](app/images/word_cloud.png)
 
 ## **Data Modeling**
 
